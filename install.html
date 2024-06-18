@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Toolbox for acoustic scene creation and rendering (TASCAR)</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="canonical" href="http://www.tascar.org/">
+    <!--link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'-->
+    <!--link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/manifest.json">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+
+  <body>
+    <header>
+      <h1>TASCAR</h1>
+      <a class="header" href="http://www.tascar.org"><img src="images/logo_tascar.png" alt="TASCAR logo" class="logo_header_right"></a>
+    </header>
+
+    <main>
+      <article>
+	      <h2>Toolbox for acoustic scene creation and rendering</h2>
+
+        <!-- summary: -->
+	      <p><strong>TASCAR</strong> is an open-source software platform
+	        for real-time interactive virtual acoustic environment
+	        rendering for research and music applications. It is
+	        licensed
+	        under <a href="https://github.com/gisogrimm/tascar/blob/master/LICENSE">GPL-2.0</a>. The
+	        source code is hosted
+	        at <a href="https://github.com/HoerTech-gGmbH/tascar/">https://github.com/HoerTech-gGmbH/tascar/</a>. Binary
+	        packages are provided
+	        by <a href="https://www.hz-ol.de/en/tascar.html">H&ouml;rzentrum
+	          Oldenburg gGmbH</a>. For the current user manual (pdf)
+	        see <a href="manual.pdf">manual.pdf</a>. A video tutorial
+	        about setting up a session in TASCAR can be
+	        found <a href="https://youtu.be/QtahGH2TqtU">here</a>.</p>
+        <!-- end summary. -->
+
+	      <p><a href="index.html">Latest news</a></p>
+
+      </article>
+      
+      <h2>Installation on Ubuntu/Debian Linux</h2><br/>
+      <p>In Ubuntu 22.04 (jammy):</p>
+      <pre><code>wget -qO- http://apt.hoertech.de/openmha-packaging.pub | sudo tee /etc/apt/trusted.gpg.d/openmha-packaging.asc
+sudo apt-add-repository 'deb [arch=amd64] http://apt.hoertech.de jammy universe'</code></pre>
+      <p>In Ubuntu 20.04 (focal):</p>
+      <pre><code>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7D6CDF547DA4ABD
+sudo apt-add-repository 'deb [arch=amd64] http://apt.hoertech.de/ focal universe'</code></pre>
+      <p>In Ubuntu 18.04 (bionic):</p>
+      <pre><code>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7D6CDF547DA4ABD
+sudo apt-add-repository 'deb [arch=amd64] http://apt.hoertech.de/ bionic universe'</code></pre>
+      <p>In Raspbian Bullseye:</p>
+      <pre><code>wget -qO- http://apt.hoertech.de/openmha-packaging.pub | sudo tee /etc/apt/trusted.gpg.d/openmha-packaging.asc
+echo "deb [arch=armhf] http://apt.hoertech.de bullseye universe" | sudo tee /etc/apt/sources.list.d/apt-hoertech.list</code></pre>
+      <p>In Raspbian Buster:</p>
+      <pre><code>wget -qO- http://apt.hoertech.de/openmha-packaging.pub | sudo apt-key add
+(echo "";echo "deb [arch=armhf] http://apt.hoertech.de bionic universe")|sudo tee -a /etc/apt/sources.list</code></pre>
+      <p>In all systems, use
+	      <pre><code>sudo apt update
+sudo apt install tascarpro</code></pre> for installation.</p>
+
+      <h2>Installation on macOS</h2><br/>
+      <p>For MacOS, currently no pre-compiled binary packages are available. However, it can be compiled from sources.</p>
+      <p>If not yet installed, then download and install 'homebrew' (<a href="https://brew.sh/">https://brew.sh/</a>).
+        Then install all dependencies with:
+        <pre><code>brew install pkgconfig glibmm jack liblo libsndfile gtkmm3 eigen boost gsl fftw libsamplerate xerces-c libltc gtksourceviewmm3 coreutils adwaita-icon-theme jpeg libmatio</code></pre>
+        The next step is to download the code:
+        <pre><code>git clone https://github.com/gisogrimm/tascar</code></pre>
+        Finally, change to the tascar directory and compile the code:
+        <pre><code>cd tascar
+make -j 8</code></pre>
+        Now TASCAR can be started from the local directory, using the
+        wrapper script:
+        <pre><code>./tascar.sh</code></pre> Alternatively, it is
+        possible to install it in the system with:
+        <pre><code>sudo make install</code></pre>
+      </p>
+      <p>Jack can be installed either from <a href="https://jackaudio.org/" target="blank">https://jackaudio.org/</a> or from brew. If you use the version from jackaudio.org, then please uninstall the brew version to avoid library incompatibilities.</p>
+
+
+      <h2>Installation on Windows</h2><br/>
+      <p>A preliminary pre-compiled version is available for Windows, see release page on github (<a href="https://github.com/gisogrimm/tascar/releases" target="blank">https://github.com/gisogrimm/tascar/releases</a>). A manual installation of jack is required, see <a href="https://jackaudio.org/" target="blank">https://jackaudio.org/</a>.</p>
+
+      <h2>Starting TASCAR</h2><br/>
+      <p>To start TASCAR, first configure and start your jack server. Then, in a terminal, type
+	      <pre><code>tascar</code></pre>
+	      or start from "Sound and Video" applications menu.</p>
+      <p>If you intent to use TASCAR in scientific research projects, please remember to cite our open access publication:</p>
+      <p>Grimm, Giso; Luberadzka, Joanna; Hohmann,
+	      Volker. <b>A Toolbox for Rendering Virtual Acoustic
+	        Environments in the Context of Audiology.</b> Acta Acustica
+	      united with Acustica, Volume 105, Number 3, May/June 2019,
+	      pp. 566-578(13),
+	      doi:<a href="https://doi.org/10.3813/AAA.919337">10.3813/AAA.919337</a> </p>
+
+    </main>
+    <aside>
+      <div class="container">
+        <a class="logo" href="https://uol.de/en/auditory-signal-processing"><img src="images/logo_uol.png" alt="UOL logo" class="logo"></a>
+        <p>TASCAR is developed at the &quot;Auditory Signal Processing and Hearing Devices&quot; group at the Carl von Ossietzky Universit&auml;t Oldenburg, Germany. The main author is Giso Grimm.</p>
+        <!--
+	          <nav>
+	            <ul class="nav">
+	              <li class="logo"><a class="logo" href="https://uol.de/en/auditory-signal-processing"><img src="images/logo_uol.png" alt="UOL logo" class="logo"></a></li>
+	            </ul>
+	          </nav>
+            -->
+      </div>
+    </aside>
+
+  </body>
+
+</html>

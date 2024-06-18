@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Toolbox for acoustic scene creation and rendering (TASCAR)</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="canonical" href="http://www.tascar.org/">
+    <!--link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'-->
+    <!--link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/manifest.json">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+
+  <body>
+    <header>
+      <h1>TASCAR</h1>
+      <a class="header" href="http://www.tascar.org"><img src="images/logo_tascar.png" alt="TASCAR logo" class="logo_header_right"></a>
+    </header>
+
+    <main>
+      <article>
+	      <h2>Toolbox for acoustic scene creation and rendering</h2>
+
+        <!-- summary: -->
+	      <p><strong>TASCAR</strong> is an open-source software platform
+	        for real-time interactive virtual acoustic environment
+	        rendering for research and music applications. It is
+	        licensed
+	        under <a href="https://github.com/gisogrimm/tascar/blob/master/LICENSE">GPL-2.0</a>. The
+	        source code is hosted
+	        at <a href="https://github.com/HoerTech-gGmbH/tascar/">https://github.com/HoerTech-gGmbH/tascar/</a>. Binary
+	        packages are provided
+	        by <a href="https://www.hz-ol.de/en/tascar.html">H&ouml;rzentrum
+	          Oldenburg gGmbH</a>. For the current user manual (pdf)
+	        see <a href="manual.pdf">manual.pdf</a>. A video tutorial
+	        about setting up a session in TASCAR can be
+	        found <a href="https://youtu.be/QtahGH2TqtU">here</a>.</p>
+        <!-- end summary. -->
+	      
+	      <p><a href="install.html">Installation instructions</a></p>
+
+      </article>
+      
+      <h2>Latest news</h2><br/>
+
+      <time>April 30, 2024</time>
+      <h3>TASCAR 0.232.1 released</h3>
+      <p>add frequency weighting and time constant to level2osc plugin.</p> <br/>
+
+      <time>April 29, 2024</time>
+      <h3>TASCAR 0.232.0 released</h3>
+      <p>add parenting feature to objects, fix bug in nested XML
+        files, fix bug in nested TOCS files, fix segmentation fault on
+        unload, improve pos2osc reliability, and other minor bugfixes
+        and improvements.</p> <br/>
+
+      <time>April 11, 2024</time>
+      <h3>TASCAR 0.231.1 released</h3>
+      <p>improvements of windows build, systematic OSC documentation</p> <br/>
+
+      <time>March 22, 2024</time>
+      <h3>TASCAR 0.231 released</h3>
+      <p>preliminary windows build, scheduled OSC messages, improved
+        scattering model, improvement of FDN based reverberation,
+        band-level measurement plugin, many bugfixes and minor
+        improvements</p> <br/>
+
+      <time>September 21, 2023</time>
+      <h3>TASCAR 0.230 released</h3>
+      <p>New plugins, many minor bug fixes, improvement of OSC handling, SVG map export via OSC, and minor improvements.</p> <br/>
+
+      <time>February 1, 2023</time>
+      <h3>TASCAR 0.229.2 released</h3>
+      <p>Correct FIR filter length in speaker correction (affects FIR speaker correction only, not related to calibration wizard).</p> <br/>
+
+      <time>January 27, 2023</time>
+      <h3>TASCAR 0.229 released</h3>
+      <p>Added plugin to generate ramps on changes of transport state, bugfix of FIR loudspeaker frequency correction, bugfix and improvement of LSL handling in the interface to Qualisys track manager, many minor bugfixes and improvements.</p> <br/>
+
+      <time>December 20, 2022</time>
+      <h3>TASCAR 0.228.3 released</h3>
+      <p>Bugfix and documentation of Matlab/Octave tools.</p> <br/>
+
+      <time>December 9, 2022</time>
+      <h3>TASCAR 0.228.1 released</h3>
+      <p>Bugfix of loudspeaker calibration wizard: When
+        frequency-dependent speaker correction was active, the
+        broadband calibration is now measured with active speaker
+        correction.</p> <br/>
+
+      <time>November 28, 2022</time>
+      <h3>TASCAR 0.228 released</h3>
+      <p>Allow to use material names instead of filter coefficients in
+        reflectors. Some materials definitions are built into TASCAR,
+        more can be defined within a scene. Furthermore, the speaker
+        calibration uses now the more robust Nelder-Mead method for
+        optimization of parameteric equalizers.</p> <br/>
+
+      <time>September 29, 2022</time>
+      <h3>TASCAR 0.227.1 released</h3>
+      <p>This is a minor bugfix release to fix the behavior of the
+        sndfile plugin: The timeline-independent playback of sound files
+        did not work correctly when the file load was triggered via
+        OSC. This, and the documentation of the sndfile plugin, is
+        updated with this release.</p> <br/>
+
+      <time>September 25, 2022</time>
+      <h3>TASCAR 0.227 released</h3>
+      <p>The dataloggin supports a headless mode for command line
+        applications, improved handling of LSL streams and some other
+        improvements (e.g., support of datalogging on macOS). The GUI
+        was partly re-designed, and works again on macOS and
+        Windows. Head tracking with the <em>ovheadtracker</em> module
+        was improved further.</p> <br/>
+
+      <time>May 28, 2022</time>
+      <h3>TASCAR 0.226 released</h3>
+      <p>The crossover filters in subwoofer bass management are now
+        using correct Butterworth filter design with 24 dB/Octave slopes
+        and corect phase. Furthermore, the calibration method was
+        improved to avoid compensation of the crossover filters by the
+        calibration process. Also the MPU6050 based head tracking was
+        improved to achieve a resolution near 1/100 of a degree
+        (compared to approx. 1 degree in the previous version).</p>
+      <br/>
+
+      <time>May 23, 2022</time>
+      <h3>TASCAR 0.225.1 released</h3>
+      <p>The loudspeaker calibration wizard was completely redesignd,
+        and spectral correction of loudspeakers based on parametric
+        filter banks was added (optional). Also the data logging was
+        improved and many other minor bugs fixed as well as features
+        added.</p>  <br/>
+
+      <time>March 9, 2022</time>
+      <h3>TASCAR 0.224 released</h3>
+      <p>With this release, some new features were added and some bugs were fixed: The spawning of subprocesses was redesigned for more control, e.g., re-spawning after process ended. The data logging was bugfixed; in some conditions the logging of LSL streams ended after several minutes. A method to discover OSC variables and their current values was added, which enables the development of GUIs. The offline rendering tools now support specification of channel maps (thanks to A. Moore), and the build on macOS was significantly improved.</p>  <br/>
+
+      <time>January 11, 2022</time>
+      <h3>TASCAR 0.223 released</h3>
+      <p>Bugfix of diffuse sound field decoding: an invalid scaling of
+        the decoding order gain resulted in lower spatial
+        resolution. With this bugfix, the diffuse field processing of
+        the directional mask plugin <em>multibeam</em> was implemented
+        and tested.</p>  <br/>
+
+      <time>November 12, 2021</time>
+      <h3>TASCAR 0.222 released</h3>
+      <p>Optional convolution of loudspeaker channels with HRIR for all speaker-based receivers.</p>  <br/>
+
+      <time>November 10, 2021</time>
+      <h3>TASCAR 0.221 released</h3>
+      <p>Fix orientation and channel order of diffuse sound fields, minor bugfixes and documentation.</p>  <br/>
+
+      <time>September 29, 2021</time>
+      <h3>TASCAR 0.220 released</h3>
+      <p>Fix dependency problem with LSL, minor improvements of various plugins, documentation and scripts.</p>  <br/>
+
+      <time>June 4, 2021</time>
+      <h3>TASCAR 0.219 released</h3>
+      <p>Add watchdoc functionality to glabsensor jackstatus.</p>  <br/>
+
+      <time>May 10, 2021</time>
+      <h3>TASCAR 0.218 released</h3>
+      <p>Fix of severe bug in tascar_spkcalib. If you are using 0.217
+        then please update immediately.</p>  <br/>
+
+      <time>May 5, 2021</time>
+      <h3>TASCAR 0.217 released</h3>
+      <p>Microphone array receiver type, many minor bugfixes and
+        improvements.</p>  <br/>
+
+      <time>February 5, 2021</time>
+      <h3>TASCAR 0.216 released</h3>
+      <p>Support of subwoofer definition and calibration in speaker
+        based render methods.</p>  <br/>
+
+      <time>December 17, 2020</time>
+      <h3>TASCAR 0.215 released</h3>
+      <p>Bugfix of the hoa3d receiver type (tolerance value of
+        pseudo-inverse), and many minor improvements and bugfixes.</p>
+      <br/>
+
+      <time>September 3, 2020</time>
+      <h3>TASCAR 0.214 released</h3>
+      <p>Release of TASCAR for ARM Linux / Raspbian Buster.</p> <br/>
+
+      <time>June 28, 2020</time>
+      <h3>TASCAR 0.213 released</h3>
+      <p>A parametric HRTF simulation binaural receiver type was
+	      added. The parametrization is based on the Spherical Head
+	      Model (SHM) by Brown and Duda (1998) and includes three
+	      further low-order filters as originally suggested by Oliver
+	      Buttler and Stephan D. Ewert and implemented in the room
+	      acoustics simulator RAZR (Wendt et al.,
+	      2014; <a href="http://www.razrengine.com">www.razrengine.com</a>).
+	      This receiver implementation is an outcome of the bachelor
+	      thesis of Fenja Schwark.</p> <br/>
+
+      <time>February 25, 2020</time>
+      <h3>TASCAR 0.212 released</h3>
+      <p>Source directivity defaults now to omni-directional for
+        volumetric (diffuse) receiver types. This can be overwritten for
+        new source directivity types, e.g, to account for average
+        diffuse radiation frequency response.</p> <br/>
+
+      <time>February 10, 2020</time>
+      <h3>TASCAR 0.211 released</h3>
+      <p>A partitioned convolution for for rendering diffuse
+        reverberation based on recorded B-format impulse responses was
+        added, and the simple feedback delay network (FDN) was
+        improved.</p> <br/>
+
+      <time>January 31, 2020</time>
+      <h3>TASCAR 0.210 released</h3>
+      <p>A receiver type for rendering to ITU 5.1 speaker layouts was
+        added. Furthermore, a new diffuse reverberation concept was
+        developed, to allow diffuse reverb also in offline simulation
+        and without recursive signal routing. A simple feedback delay
+        network (FDN) was added as a prototype algorithm.</p>  <br/>
+
+      <time>January 17, 2020</time>
+      <h3>TASCAR 0.209 released</h3>
+      <p>Addition of A weighting to level metering, some GUI improvements and bug fixes. Switching of meter weighting at run-time is now possible.</p>  <br/>
+
+      <time>December 2, 2019</time>
+      <h3>TASCAR 0.207 released</h3>
+      <p>Improvements of the content authorship and right management system.</p>  <br/>
+
+      <time>Agust 16, 2019</time>
+      <h3>TASCAR 0.205 released</h3>
+      <p>Implementation of arbitrary order 3D HOA encoding and decoding, with mode matching and ALLRAD decoder.</p>  <br/>
+
+      <time>May 15, 2019</time>
+      <h3>Technical paper on TASCAR</h3>
+      <p>The internals of TASCAR are now available as a Open Access
+	      journal paper:<br/> Grimm, Giso; Luberadzka, Joanna; Hohmann,
+	      Volker. <b>A Toolbox for Rendering Virtual Acoustic
+	        Environments in the Context of Audiology.</b> Acta Acustica
+	      united with Acustica, Volume 105, Number 3, May/June 2019,
+	      pp. 566-578(13),
+	      doi:<a href="https://doi.org/10.3813/AAA.919337">10.3813/AAA.919337</a> </p>
+
+      <time>April 10, 2019</time>
+      <h3>TASCAR 0.200 released</h3>
+      <p>With April 30, 2019, Ubuntu 14.04 LTS reaches
+        end-of-life. Version 0.200 is the last version of TASCAR with
+				support for Ubuntu 14.04.</p>  <br/>
+			
+    </main>
+    <aside>
+      <div class="container">
+        <a class="logo" href="https://uol.de/en/auditory-signal-processing"><img src="images/logo_uol.png" alt="UOL logo" class="logo"></a>
+        <p>TASCAR is developed at the &quot;Auditory Signal Processing and Hearing Devices&quot; group at the Carl von Ossietzky Universit&auml;t Oldenburg, Germany. The main author is Giso Grimm.</p>
+        <!--
+	          <nav>
+	            <ul class="nav">
+	              <li class="logo"><a class="logo" href="https://uol.de/en/auditory-signal-processing"><img src="images/logo_uol.png" alt="UOL logo" class="logo"></a></li>
+	            </ul>
+	          </nav>
+            -->
+      </div>
+    </aside>
+
+  </body>
+
+</html>
