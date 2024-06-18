@@ -48,9 +48,9 @@ h6{
     font-weight:200
 }
 a,a:visited{
-    color:#555;
+    color:#004899;
     text-decoration:none;
-    font-weight:bold
+    font-weight:normal;
 }
 a:hover{
     color:#000;
@@ -71,7 +71,7 @@ main{
     margin: 10px;
     padding:0px 10px;
     max-width:1200px;
-    #margin:0 auto;
+    margin:auto;
     margin-top: 10px;
     background:#FFFFFF;
     border-radius:12px;
@@ -245,7 +245,7 @@ code {
 }
 
 a[href^="http"] {
-    background-image: url("link-external.svg");
+    background-image: url(../images/linkext.svg);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: 16px 16px;
