@@ -54,6 +54,9 @@
       </article>
       
       <h2>Installation on Ubuntu/Debian Linux</h2><br/>
+      <p>In Ubuntu 24.04 (noble):</p>
+      <pre><code>wget -qO- http://apt.hoertech.de/openmha-packaging.pub | sudo tee /etc/apt/trusted.gpg.d/openmha-packaging.asc
+sudo apt-add-repository 'deb [arch=amd64] http://apt.hoertech.de noble universe'</code></pre>
       <p>In Ubuntu 22.04 (jammy):</p>
       <pre><code>wget -qO- http://apt.hoertech.de/openmha-packaging.pub | sudo tee /etc/apt/trusted.gpg.d/openmha-packaging.asc
 sudo apt-add-repository 'deb [arch=amd64] http://apt.hoertech.de jammy universe'</code></pre>
