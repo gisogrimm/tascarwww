@@ -33,27 +33,12 @@
       <article>
 	      <h2>Toolbox for acoustic scene creation and rendering</h2>
 
-        <!-- summary: -->
-	      <p><strong>TASCAR</strong> is an open-source software platform
-	        for real-time interactive virtual acoustic environment
-	        rendering for research and music applications. It is
-	        licensed
-	        under <a href="https://github.com/gisogrimm/tascar/blob/master/LICENSE">GPL-2.0</a>. The
-	        source code is hosted
-	        at <a href="https://github.com/gisogrimm/tascar/">https://github.com/gisogrimm/tascar/</a>. Binary
-	        packages are provided
-	        by <a href="https://www.hz-ol.de/en/tascar.html">H&ouml;rzentrum
-	          Oldenburg gGmbH</a>. For the current user manual (pdf)
-	        see <a href="manual.pdf">manual.pdf</a>. A video tutorial
-	        about setting up a session in TASCAR can be
-	        found <a href="https://youtu.be/QtahGH2TqtU">here</a>.</p>
-        <!-- end summary. -->
-
 	      <p><a href="index.html">Latest news</a></p>
 
       </article>
       
       <h2>Installation on Ubuntu/Debian Linux</h2><br/>
+      <p>Ubuntu/Debian binary packages are provided through the H&ouml;rzentrum package repository:</p>
       <p>In Ubuntu 24.04 (noble):</p>
       <pre><code>wget -qO- http://apt.hoertech.de/openmha-packaging.pub | sudo tee /etc/apt/trusted.gpg.d/openmha-packaging.asc
 sudo apt-add-repository 'deb [arch=amd64] http://apt.hoertech.de noble universe'</code></pre>
@@ -96,7 +81,13 @@ make -j 8</code></pre>
 
 
       <h2>Installation on Windows</h2><br/>
-      <p>A preliminary pre-compiled version is available for Windows, see release page on github (<a href="https://github.com/gisogrimm/tascar/releases" target="blank">https://github.com/gisogrimm/tascar/releases</a>). A manual installation of jack is required, see <a href="https://jackaudio.org/" target="blank">https://jackaudio.org/</a>.</p>
+      <p>A preliminary pre-compiled version is available for Windows,
+      see release page on github
+      (<a href="https://github.com/gisogrimm/tascar/releases"
+      target="blank">https://github.com/gisogrimm/tascar/releases</a>). A
+      manual installation of jack is required,
+      see <a href="https://jackaudio.org/"
+      target="blank">https://jackaudio.org/</a>.</p>
 
       <h2>Starting TASCAR</h2><br/>
       <p>To start TASCAR, first configure and start your jack server. Then, in a terminal, type
