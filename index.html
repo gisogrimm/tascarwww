@@ -9,8 +9,6 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="canonical" href="http://www.tascar.org/">
-    <!--link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'-->
-    <!--link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'-->
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
@@ -31,18 +29,17 @@
 
     <main>
       <article>
-	      <h2>Toolbox for acoustic scene creation and rendering</h2>
+        <h2>Toolbox for acoustic scene creation and rendering</h2>
 
-        <!-- summary: -->
-	      <p><strong>TASCAR</strong> (Toolbox for Acoustic Scene
-	        Creation and Rendering) is a powerful open-source software
-	        environment designed for spatial audio signal
-	        processing. Developed by Giso Grimm at the Auditory Signal
-	        Processing and Hearing Devices group at Carl von Ossietzky
-	        Universit&auml;t Oldenburg, TASCAR is particularly useful
-	        for the efficient simulation of complex acoustic
-	        environments and the rendering of high-quality multi-channel
-	        audio in either real-time or non-real-time.</p>
+        <p><strong>TASCAR</strong> (Toolbox for Acoustic Scene
+          Creation and Rendering) is a powerful open-source software
+          environment designed for spatial audio signal
+          processing. Developed by Giso Grimm at the Auditory Signal
+          Processing and Hearing Devices group at Carl von Ossietzky
+          Universit&auml;t Oldenburg, TASCAR is particularly useful
+          for the efficient simulation of complex acoustic
+          environments and the rendering of high-quality multi-channel
+          audio in either real-time or non-real-time.</p>
 
         <p>Its versatility allows for the simulation of various
           acoustic phenomena, including dynamic sound sources and
@@ -59,29 +56,38 @@
           simulation.</p>
 
         <p>The source code is hosted
-	        at <a href="https://github.com/gisogrimm/tascar/">https://github.com/gisogrimm/tascar/</a>. Binary
-	        packages for Ubuntu Linux are provided
-	        by <a href="https://www.hz-ol.de/en/tascar.html">H&ouml;rzentrum
-	        Oldenburg gGmbH</a>; packages for Ubuntu Linux and Windows
-	        are available on Github. For the current user manual (pdf)
-	        see <a href="https://github.com/gisogrimm/tascar/wiki/development/manual.pdf">manual.pdf</a>. A video tutorial
-	        about setting up a session in TASCAR can be
-	        found <a href="https://youtu.be/QtahGH2TqtU">here</a>.</p>
-        <!-- end summary. -->
-	      
-	      <p>View <a href="install.html">installation instructions</a>.</p>
+          at <a href="https://github.com/gisogrimm/tascar/">https://github.com/gisogrimm/tascar/</a>. Binary
+          packages for Ubuntu Linux are provided
+          by <a href="https://www.hz-ol.de/en/tascar.html">H&ouml;rzentrum
+          Oldenburg gGmbH</a>; packages for Ubuntu Linux and Windows
+          are available on Github. For the current user manual (pdf)
+          see <a href="https://github.com/gisogrimm/tascar/wiki/development/manual.pdf">manual.pdf</a>. A video tutorial
+          about setting up a session in TASCAR can be
+          found <a href="https://youtu.be/QtahGH2TqtU">here</a>.</p>
+
+        <p>View <a href="install.html">installation instructions</a>.</p>
 
       </article>
       
       <h2>Latest news</h2><br/>
 
+      <time>July 18, 2026</time>
+      <h3>TASCAR 0.238.1 released</h3>
+      <p>
+        <ul>
+          <li>Improve support for Mackie Control Unit protocol</li>
+          <li>Add trim, ramp and channel selection options for convolution in speaker layouts</li>
+        </ul>
+      </p>
+      <p>Additionally, the installation method for Linux changed. See installation instructions.</p>
+
       <time>April 8, 2026</time>
       <h3>TASCAR 0.237.1 released</h3>
       <p>
-	<ul>
-	  <li>MIDI support on MacOS</li>
-	  <li>minimum phase FIR filter can be used for loudspeaker equalization</li>
-	</ul>
+        <ul>
+          <li>MIDI support on MacOS</li>
+          <li>minimum phase FIR filter can be used for loudspeaker equalization</li>
+        </ul>
       </p> 
 
 
@@ -93,13 +99,13 @@
       <time>May 18, 2025</time>
       <h3>TASCAR 0.234.3 released</h3>
       <p>We are pleased to announce the release of version 0.234.3, which includes several minor improvements and bug fixes. Notable changes include:</p> 
-<ul>
-    <li><b>Serial Port Head Tracker:</b> Corrected compatibility issues with MacOS serial port head trackers.</li>
-    <li><b>EOG Sensor:</b> Enhanced EOG sensor functionality for improved accuracy and reliability.</li>
-    <li><b>liblsl Packaging:</b> Improved packaging of liblsl for easier integration and deployment.</li>
-    <li><b>sndfile Triggers:</b> Optionally include timestamp information with sndfile triggers for enhanced data synchronization (<a href="https://github.com/gisogrimm/tascar/issues/33">issue #33</a>).</li>
-    </ul>
-<br/>
+      <ul>
+        <li><b>Serial Port Head Tracker:</b> Corrected compatibility issues with MacOS serial port head trackers.</li>
+        <li><b>EOG Sensor:</b> Enhanced EOG sensor functionality for improved accuracy and reliability.</li>
+        <li><b>liblsl Packaging:</b> Improved packaging of liblsl for easier integration and deployment.</li>
+        <li><b>sndfile Triggers:</b> Optionally include timestamp information with sndfile triggers for enhanced data synchronization (<a href="https://github.com/gisogrimm/tascar/issues/33">issue #33</a>).</li>
+      </ul>
+      <br/>
 
       <time>February 16, 2025</time>
       <h3>TASCAR 0.234.2 released</h3>
@@ -274,14 +280,14 @@
       <time>June 28, 2020</time>
       <h3>TASCAR 0.213 released</h3>
       <p>A parametric HRTF simulation binaural receiver type was
-	      added. The parametrization is based on the Spherical Head
-	      Model (SHM) by Brown and Duda (1998) and includes three
-	      further low-order filters as originally suggested by Oliver
-	      Buttler and Stephan D. Ewert and implemented in the room
-	      acoustics simulator RAZR (Wendt et al.,
-	      2014; <a href="http://www.razrengine.com">www.razrengine.com</a>).
-	      This receiver implementation is an outcome of the bachelor
-	      thesis of Fenja Schwark.</p> <br/>
+        added. The parametrization is based on the Spherical Head
+        Model (SHM) by Brown and Duda (1998) and includes three
+        further low-order filters as originally suggested by Oliver
+        Buttler and Stephan D. Ewert and implemented in the room
+        acoustics simulator RAZR (Wendt et al.,
+        2014; <a href="http://www.razrengine.com">www.razrengine.com</a>).
+        This receiver implementation is an outcome of the bachelor
+        thesis of Fenja Schwark.</p> <br/>
 
       <time>February 25, 2020</time>
       <h3>TASCAR 0.212 released</h3>
@@ -320,31 +326,24 @@
       <time>May 15, 2019</time>
       <h3>Technical paper on TASCAR</h3>
       <p>The internals of TASCAR are now available as a Open Access
-	      journal paper:<br/> Grimm, Giso; Luberadzka, Joanna; Hohmann,
-	      Volker. <b>A Toolbox for Rendering Virtual Acoustic
-	        Environments in the Context of Audiology.</b> Acta Acustica
-	      united with Acustica, Volume 105, Number 3, May/June 2019,
-	      pp. 566-578(13),
-	      doi:<a href="https://doi.org/10.3813/AAA.919337">10.3813/AAA.919337</a> </p>
+        journal paper:<br/> Grimm, Giso; Luberadzka, Joanna; Hohmann,
+        Volker. <b>A Toolbox for Rendering Virtual Acoustic
+          Environments in the Context of Audiology.</b> Acta Acustica
+        united with Acustica, Volume 105, Number 3, May/June 2019,
+        pp. 566-578(13),
+        doi:<a href="https://doi.org/10.3813/AAA.919337">10.3813/AAA.919337</a> </p>
 
       <time>April 10, 2019</time>
       <h3>TASCAR 0.200 released</h3>
       <p>With April 30, 2019, Ubuntu 14.04 LTS reaches
         end-of-life. Version 0.200 is the last version of TASCAR with
-				support for Ubuntu 14.04.</p>  <br/>
-			
+        support for Ubuntu 14.04.</p>  <br/>
+      
     </main>
     <aside>
       <div class="container">
         <a class="logo" href="https://uol.de/en/auditory-signal-processing"><img src="images/logo_uol.png" alt="UOL logo" class="logo"></a>
         <p>TASCAR is developed at the &quot;Auditory Signal Processing and Hearing Devices&quot; group at the Carl von Ossietzky Universit&auml;t Oldenburg, Germany. The main author is Giso Grimm.</p>
-        <!--
-	          <nav>
-	            <ul class="nav">
-	              <li class="logo"><a class="logo" href="https://uol.de/en/auditory-signal-processing"><img src="images/logo_uol.png" alt="UOL logo" class="logo"></a></li>
-	            </ul>
-	          </nav>
-            -->
       </div>
     </aside>
 
