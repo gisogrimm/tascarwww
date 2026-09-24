@@ -32,13 +32,37 @@
         <p>View <a href="index.html">Latest news</a>.</p>
       </article>
       
-      <h2>Installation on Ubuntu/Debian Linux</h2>
-      <br/>
-      <p>To find out your current Ubuntu version, use the following command:</p>
-      <pre><code>lsb_release -a</code></pre>
-      <p>Download the appropriate packages for your operating system from <a href="https://github.com/gisogrimm/tascar/releases" target="_blank">https://github.com/gisogrimm/tascar/releases</a>.</p>
-      <p>To install TASCAR and all dependencies, navigate to the directory containing the downloaded packages and run:</p>
-      <pre><code>sudo apt install ./path_to_packages/*.deb</code></pre>
+<h2>Installation on Ubuntu/Debian Linux</h2>
+<br/>
+<p>For the easiest installation on Ubuntu/Debian Linux, we recommend using our automated installation script:</p>
+
+<ol>
+  <li>Download the installation script:
+    <pre><code>wget https://www.tascar.org/tascar_installer.sh</code></pre>
+  </li>
+  <li>Make the script executable:
+    <pre><code>chmod +x tascar_installer.sh</code></pre>
+  </li>
+  <li>Run the installation script:
+    <pre><code>sudo ./tascar_installer.sh</code></pre>
+  </li>
+</ol>
+
+<p>The script will automatically:</p>
+<ul>
+  <li>Detect your Ubuntu version and system architecture</li>
+  <li>Download the appropriate TASCAR packages from GitHub</li>
+  <li>Install all required dependencies</li>
+  <li>Set up TASCAR on your system</li>
+</ul>
+
+<p>Alternatively, you can manually install TASCAR by following these steps:</p>
+
+<p>To find out your current Ubuntu version, use the following command:</p>
+<pre><code>lsb_release -a</code></pre>
+<p>Download the appropriate packages for your operating system from <a href="https://github.com/gisogrimm/tascar/releases" target="_blank">https://github.com/gisogrimm/tascar/releases</a>.</p>
+<p>To install TASCAR and all dependencies, navigate to the directory containing the downloaded packages and run:</p>
+<pre><code>sudo apt install ./path_to_packages/*.deb</code></pre>
 
       <h2>Installation on macOS</h2>
       <br/>
